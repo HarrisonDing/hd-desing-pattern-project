@@ -1,0 +1,2 @@
+Spring Boot Cli to create project:
+  spring init --build gradle --groupId hd.spring.boot --version 1.0.0 --java-version 1.8 --dependencies web --name hello-springboot --package-name hd.spring.boot.hello hello-springboot
