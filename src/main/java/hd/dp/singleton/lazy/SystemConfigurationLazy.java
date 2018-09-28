@@ -7,7 +7,7 @@ public class SystemConfigurationLazy {
 	private SystemConfigurationLazy() {
 	}
 
-	public static SystemConfigurationLazy getInstance() {
+	public static synchronized SystemConfigurationLazy getInstance() {
 		if (instance == null) {
 			instance = new SystemConfigurationLazy();
 		}
