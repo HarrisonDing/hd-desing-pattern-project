@@ -7,7 +7,7 @@ package hd.dp.prototype;
  * @author Harrison.Ding
  *
  */
-public class SystemProto {
+public class SystemProto implements Cloneable {
 	private String	name;
 	private int		level;
 	private String	type;
@@ -36,4 +36,17 @@ public class SystemProto {
 		this.type = type;
 	}
 
+	public SystemProto clone() {
+		try {
+			return (SystemProto) super.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "SystemProto [name=" + name + ", level=" + level + ", type=" + type + "]";
+	}
 }
