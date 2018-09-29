@@ -1,8 +1,14 @@
 package hd.dp.prototype;
 
+<<<<<<< .mine
 import java.util.ArrayList;
 import java.util.List;
 
+=======
+import java.util.List;
+
+
+>>>>>>> .theirs
 /**
  * Prototype used when want to create a duplicated object, but may some
  * attributes may be updated later.
