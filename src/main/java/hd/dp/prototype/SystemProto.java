@@ -1,5 +1,7 @@
 package hd.dp.prototype;
 
+import java.util.List;
+
 /**
  * Prototype used when want to create a duplicated object, but may some
  * attributes may be updated later.
@@ -8,9 +10,9 @@ package hd.dp.prototype;
  *
  */
 public class SystemProto implements Cloneable {
-	private String	name;
-	private int		level;
-	private String	type;
+	private String			name;
+	private int				level;
+	private List<String>	typeList;
 
 	public String getName() {
 		return name;
@@ -28,14 +30,6 @@ public class SystemProto implements Cloneable {
 		this.level = level;
 	}
 
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
 	public SystemProto clone() {
 		try {
 			return (SystemProto) super.clone();
@@ -47,6 +41,14 @@ public class SystemProto implements Cloneable {
 
 	@Override
 	public String toString() {
-		return "SystemProto [name=" + name + ", level=" + level + ", type=" + type + "]";
+		return "SystemProto [name=" + name + ", level=" + level + ", typeList=" + typeList + "]";
+	}
+
+	public List<String> getTypeList() {
+		return typeList;
+	}
+
+	public void setTypeList(List<String> typeList) {
+		this.typeList = typeList;
 	}
 }
