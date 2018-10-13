@@ -1,4 +1,4 @@
-package hd.dp.proxy.a;
+package hd.dp.proxy.subject;
 
 public interface Subject {
 

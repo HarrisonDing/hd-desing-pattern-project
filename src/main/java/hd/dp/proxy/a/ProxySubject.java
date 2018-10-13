@@ -1,5 +1,7 @@
 package hd.dp.proxy.a;
 
+import hd.dp.proxy.subject.Subject;
+
 public class ProxySubject implements Subject {
 	Subject subject;
 
